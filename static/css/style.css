@@ -105,14 +105,15 @@ body {
 }
 
 .add-btn {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 /* ---------- Forms ---------- */
 .student-form {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 500px;
+    max-height:700px;
 }
 
 .student-form label {
