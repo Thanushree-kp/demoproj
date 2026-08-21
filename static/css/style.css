@@ -1,0 +1,191 @@
+/* style.css — Simple, clean, responsive styling */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-brand {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Layout ---------- */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Home page ---------- */
+.hero {
+    text-align: center;
+    padding: 40px 10px;
+}
+
+.hero h1 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.hero-buttons a {
+    margin: 0 8px;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #2c80ff;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #dfe4ea;
+    color: #222;
+}
+
+.btn-edit {
+    background-color: #f5b301;
+    color: white;
+    padding: 6px 12px;
+    font-size: 13px;
+}
+
+.btn-delete {
+    background-color: #e74c3c;
+    color: white;
+    padding: 6px 12px;
+    font-size: 13px;
+}
+
+.add-btn {
+    margin-bottom: 15px;
+}
+
+/* ---------- Forms ---------- */
+.student-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.student-form label {
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.student-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.student-form button,
+.student-form a {
+    margin-top: 20px;
+}
+
+.error-message {
+    background-color: #fdecea;
+    color: #b71c1c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.empty-message {
+    color: #666;
+    margin-top: 15px;
+}
+
+/* ---------- Table ---------- */
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.student-table th,
+.student-table td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.student-table th {
+    background-color: #f0f2f5;
+}
+
+.actions a {
+    margin-right: 6px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links a {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+
+    .student-table {
+        font-size: 13px;
+    }
+
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+}

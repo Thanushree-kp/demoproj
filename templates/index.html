@@ -1,0 +1,14 @@
+<!-- index.html — Home page -->
+{% extends "base.html" %}
+
+{% block content %}
+<div class="hero">
+    <h1>Welcome to the Student Management System</h1>
+    <p>A simple CRUD app built with Flask, SQLite, HTML, CSS and JavaScript.</p>
+
+    <div class="hero-buttons">
+        <a href="{{ url_for('students') }}" class="btn btn-primary">View Students</a>
+        <a href="{{ url_for('add_student') }}" class="btn btn-secondary">Add New Student</a>
+    </div>
+</div>
+{% endblock %}
